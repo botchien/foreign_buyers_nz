@@ -1,0 +1,106 @@
+---
+title: "Foreign buyers: Share of residential property transfers by non-New Zealanders"
+# date: '`r format(Sys.time(), "%d %B, %Y")`'
+author: "Zac Clark"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd("G:/ex/SNZ_foreign")
+# source(".Rprofile")
+
+library(sf)
+library(tidyverse)
+library(stringr)
+library(leaflet)
+library(lubridate)
+library(htmltools) #save leaflet html
+library(DT)
+library(knitr)
+library(kableExtra)
+library(formattable)
+library(rmarkdown)
+
+library(leaflet.extras)
+
+
+path <- file.path("data_intermediate", 'transfers.rds')
+dat <- readRDS(path)  
+
+path <- file.path("data_intermediate", 'chloropeth.rds')
+chloropeth <- readRDS(path)  
+
+
+```
+
+
+```{r, echo=FALSE}
+
+```
+
+The effect of foreign buyers is a highly localised one. Much of the country has low rates of non NZ buyers, but some areas of Auckland as well as Queenstown have much higher rates than the rest of the country.
+
+These results exclude sales to corporate entities (10% in March 2018).
+
+### Auckland foreign buyers
+
+*March 2018 percentage of residential property sales from those that don't have NZ citizenship or a residents visa (where the affiliation is known). Those areas which are labelled NA have been supressed due to a low sample size.*
+
+
+```{r map, warning = FALSE, echo = FALSE, message = FALSE}
+
+
+chloropeth <- chloropeth %>% addFullscreenControl(position = "topleft", pseudoFullscreen = FALSE) 
+
+chloropeth 
+
+```
+
+
+
+### Council area tables for foreign buyers and sellers (March 2018) {.tabset}
+
+#### Percent
+
+```{r table_owners, warning = FALSE, echo = FALSE, message = FALSE, results = "asis"}
+
+table <- dat %>% filter(Group == "Affiliation by territorial authority and local boards",
+                        Units == "Percent") %>%
+                 select(Area = Series_title_1, type = Series_title_3, value = Data_value) %>%
+                 spread(type, value) %>% 
+                 filter(!is.na(Buyers), 
+                        !str_detect(Area, "Local Board Area")) %>%
+                arrange(-Buyers)
+
+table %>% kable("html") %>%
+            kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+```
+
+#### Numbers
+
+```{r table_owners2, warning = FALSE, echo = FALSE, message = FALSE, results = "asis"}
+
+table2 <- dat %>% filter(Group == "Affiliation by territorial authority and local boards",
+                        Units == "Number") %>%
+                 select(Area = Series_title_1, type = Series_title_3, value = Data_value) %>%
+                 spread(type, value) %>% 
+                 filter(!is.na(Buyers),
+                        !str_detect(Area, "Local Board Area")) %>%
+                arrange(-Buyers)
+
+table2 %>% kable("html") %>%
+            kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+
+```
+
+<br>	
+
+### Source
+
+Stats NZ - https://www.stats.govt.nz/information-releases/property-transfer-statistics-march-2018-quarter
+
+<br>	
+<br>	
+

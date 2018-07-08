@@ -1,0 +1,185 @@
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.isotc211.org/2005/gmd">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>c29641af-afab-52dd-9e72-af70f8f8c03c</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language>
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
+  </gmd:language>
+  <gmd:characterSet>
+    <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
+  </gmd:characterSet>
+  <gmd:hierarchyLevel>
+    <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</gmd:MD_ScopeCode>
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>dataset</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact/>
+  <gmd:dateStamp>
+    <gco:Date>2017-12-04</gco:Date>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName>
+    <gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+    <gco:CharacterString>2007</gco:CharacterString>
+  </gmd:metadataStandardVersion>
+  <gmd:spatialRepresentationInfo>
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:topologyLevel>
+        <gmd:MD_TopologyLevelCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly" codeSpace="ISOTC211/19115">geometryOnly</gmd:MD_TopologyLevelCode>
+      </gmd:topologyLevel>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" codeSpace="ISOTC211/19115">composite</gmd:MD_GeometricObjectTypeCode>
+          </gmd:geometricObjectType>
+          <gmd:geometricObjectCount>
+            <gco:Integer>187</gco:Integer>
+          </gmd:geometricObjectCount>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>2193</gco:CharacterString>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>EPSG</gco:CharacterString>
+          </gmd:codeSpace>
+          <gmd:version>
+            <gco:CharacterString>8.6.2</gco:CharacterString>
+          </gmd:version>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification>
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>CB2018_V1_00_Clipped</gco:CharacterString>
+          </gmd:title>
+          <gmd:date/>
+          <gmd:presentationForm>
+            <gmd:CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</gmd:CI_PresentationFormCode>
+          </gmd:presentationForm>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract>
+        <gco:CharacterString>This dataset is the major released version of the annually released community board/local board boundaries for 1 January 2018, clipped to the coastline. This clipped version contains 118 community boards and 21 Auckland local boards, excluding area outside community board, and has been created for map creation/cartographic purposes and does not represent the official full extent boundaries.Community boards are set up under the Local Government Act 2002 and Local Electoral Act 2001. Their purpose is to administer the affairs of communities with populations not less than 1,500 within rural, urban, or metropolitan districts of a territorial authority. A community board’s functions, powers, and duties are delegated at the discretion of its parent territorial authority and these may differ between community boards. Community boards and their boundaries are reviewed in the year before the three-yearly local government elections. Community boards are numbered based on their corresponding territorial authority. Each community board has a unique five-digit number. The first three digits refer to the territorial authority that the community board lies within. The following two digits are sequential, and represent the number of community boards within the territorial authority. For example, Tararua District (041) has two community boards numbered 04101 and 04102. The rest of the district is not represented by a community board and is coded 04199 (Area Outside Community).Some territorial authorities do not have community boards and, if they do, the community boards do not necessarily cover the whole territorial authority area.Local boards were introduced as part of the new local government arrangements for Auckland in 2010. Local boards share governance with a council’s governing body and each has complementary responsibilities, guaranteed by legislation. Local boards can propose bylaws and they gather community views on local and regional matters. Local legislation enacted in 2012 allows for the establishment of local boards in areas of new unitary authorities that are predominantly urban and have a population of more than 400,000. The boundaries of local boards cannot be abolished or changed except through a reorganisation process. There are 21 local boards in the Auckland Council.Digital boundary data became freely available on 1 July 2007.</gco:CharacterString>
+      </gmd:abstract>
+      <gmd:purpose>
+        <gco:CharacterString>CB2018_V1_00_Clipped is a major released version of the annually released community board/local board boundaries as at 1 January 2018, clipped to the coastline. This clipped version contains 118 community boards and 21 Auckland local boards, excluding area outside community board, and has been created for map creation/cartographic purposes and does not represent the official full extent boundaries.</gco:CharacterString>
+      </gmd:purpose>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Downloadable Data</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName/>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>cb</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>community board</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>CB</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>Community Board</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>lb</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>local board</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>LB</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>Local Board</gco:CharacterString>
+          </gmd:keyword>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</gmd:MD_SpatialRepresentationTypeCode>
+      </gmd:spatialRepresentationType>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
+      </gmd:characterSet>
+      <gmd:environmentDescription>
+        <gco:CharacterString>Version 6.2 (Build 9200) ; Esri ArcGIS 10.3.1.4959</gco:CharacterString>
+      </gmd:environmentDescription>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>-180</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>180</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>-47.421563</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>-33.773451</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>File Geodatabase Feature Class</gco:CharacterString>
+          </gmd:name>
+          <gmd:version/>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://datafinder.stats.govt.nz/layer/92194-community-board-2018-clipped-generalised/</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:metadataConstraints>
+    <gmd:MD_LegalConstraints>
+      <gmd:useLimitation>Attribution 4.0 International</gmd:useLimitation>
+      <gmd:useLimitation>http://creativecommons.org/licenses/by/4.0/</gmd:useLimitation>
+      <gmd:useConstraints>
+        <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license">license</gmd:MD_RestrictionCode>
+      </gmd:useConstraints>
+    </gmd:MD_LegalConstraints>
+  </gmd:metadataConstraints>
+</gmd:MD_Metadata>
